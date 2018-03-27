@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>VTail Panel</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="http://vtailing.com/salesgui/node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="http://vtailing.com/salesgui/node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="http://vtailing.com/salesgui/node_modules/rickshaw/rickshaw.min.css" />
+  <link rel="stylesheet" href="http://vtailing.com/salesgui/node_modules/chartist/dist/chartist.min.css" />
+    <link rel="stylesheet" href="http://vtailing.com/salesgui/node_modules/font-awesome/css/font-awesome.min.css" />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://vtailing.com/salesgui/node_modules/morris.js/morris.css" />
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<body class="sidebar-dark">
+  <!-- partial -->
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form class="form-inline mt-2 ml-3 mt-md-0 d-none d-sm-block">
+          <div class="input-group solid">
+            <span class="input-group-addon"><i class="mdi mdi-magnify"></i></span>
+            <input type="text" class="form-control">
+          </div>
+        </form>
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="count bg-warning">7</span>
+            </a>
+            <div class="dropdown-menu navbar-dropdown notification-drop-down" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-bell text-warning fa-fw"></i>
+                <span class="notification-text">Vtail Scheduled Maintainence</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-bell text-warning fa-fw"></i>
+                <span class="notification-text">Video Sucessfully Updated</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-exclamation-triangle text-danger fa-fw"></i>
+                <span class="notification-text">Luminix X Cashbox Full</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-exclamation-triangle text-danger fa-fw"></i>
+                <span class="notification-text">WebGlowMachine Bill Jammed</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-bell text-warning fa-fw"></i>
+                <span class="notification-text">Lumini X Restarted</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-message-outline"></i>
+              <span class="count bg-danger">4</span>
+            </a>
+            <div class="dropdown-menu navbar-dropdown mail-notification" aria-labelledby="MailDropdown">
+              <a class="dropdown-item" href="#">
+                <div class="sender-img">
+                  <img src="http://via.placeholder.com/47x47" alt="">
+                  <span class="badge badge-success">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">VTail Admin</p>
+                  <p class="Sender-message">Last day for 10% off on Mix #25.</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="sender-img">
+                  <img src="http://via.placeholder.com/47x47" alt="">
+                  <span class="badge badge-success">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">VTail Admin</p>
+                  <p class="Sender-message">Scheduled Maintanence 11PM PST</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="sender-img">
+                  <img src="http://via.placeholder.com/47x47" alt="">
+                  <span class="badge badge-primary">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">VTail Admin</p>
+                  <p class="Sender-message">5 Tips on Machine placement</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="sender-img">
+                  <img src="http://via.placeholder.com/47x47" alt="">
+                  <span class="badge badge-warning">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">VTail Admin</p>
+                  <p class="Sender-message">Upgrade Your Lumini X</p>
+                </div>
+              </a>
+              <a href="#" class="dropdown-item view-all">View all</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <div class="user-info">
+            <div class="profile">
+              <img src="http://via.placeholder.com/47x47" alt="">
+            </div>
+            <div class="details">
+              <p class="user-name">Aaron Pelto</p>
+              <p class="designation">VTail LLC</p>
+            </div>
+          </div>
+          <ul class="nav">
+            <!--main pages start-->
+            <li class="nav-item nav-category">
+              <span class="nav-link">Administration</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="mdi mdi-gauge menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/machines.html">
+                <i class="mdi mdi-cube-outline menu-icon"></i>
+                <span class="menu-title">Machines</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/samples/order.html">
+                <i class="mdi mdi-cart-outline menu-icon"></i>
+                <span class="menu-title">Order Product</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/samples/profile.html">
+                <i class="mdi mdi-buffer menu-icon"></i>
+                <span class="menu-title">Account</span>
+              </a>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">Sales</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/search.html">
+                <i class="mdi mdi-file-document-box menu-icon"></i>
+                <span class="menu-title">Search Transactions</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/apps/calendar.html">
+                <i class="mdi mdi-table-large menu-icon"></i>
+                <span class="menu-title">Grid View</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/maps/heatmap.html">
+                <i class="mdi mdi-map-marker-outline menu-icon"></i>
+                <span class="menu-title">HeatMap</span>
+              </a>
+            </li>
+
+
+            <!--main pages end-->
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="content-wrapper">
+
+          <div class="row">
+            <div class="col-lg-6 col-12 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title">Today's Machine Sales</h2>
+                  <div id="morris-area-example"></div>
+                </div>
+              </div>
+              <div class="card w-100">
+                <div class="card-body">
+                  <h2 class="card-title">Sales By Machine</h2>
+                  <ul class="ct-legend mt-5"></ul>
+                  <div class="row mx-1 mt-5 d-none d-sm-flex">
+                    <div class="col-12">
+                    </div>
+                    <div class="col-12 col-sm-4 revenue-details text-center text-sm-left">
+                      <p class="head text-muted">Lumini X</p>
+                      <p class="progess mb-0">$1,621.74</p>
+                    </div>
+                    <div class="col-12 col-sm-4 d-flex justifiy-content-center flex-column text-center revenue-details">
+                      <p class="head text-muted">Primo</p>
+                      <p class="progess mb-0">$362.74</p>
+                    </div>
+                    <div class="col-12 col-sm-4 text-center text-sm-right revenue-details">
+                      <p class="head text-muted">Web Glow Machine</p>
+                      <p class="progess mb-0">$3,362.74</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-4">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h2 class="card-title">Machine Overview</h2>
+                  <ul class="ct-legend mt-5"></ul>
+                  <div class="row mx-1 mt-5 d-none d-sm-flex">
+                    <div class="col-12">
+                      <table class="table mb-0 text-center">
+                        <tbody>
+                          <tr>
+                            <td>Lumini X <i class="fa fa-edit"></i></td>
+                            <td>Primo <i class="fa fa-edit"></i></td>
+                            <td>Web Glow Machine <i class="fa fa-edit"></i></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/lumini_preview.png" /></td>
+                            <td><img src="images/primo_preview.png" /></td>
+                            <td><img src="images/wgm_preview.png" /></td>
+                          </tr>
+                          <tr>
+                            <td><div class="col-12 badge badge-pill  badge-success">Online</div></td>
+                            <td><div class="col-12 badge badge-pill  badge-warning">Cashbox Full</div></td>
+                            <td><div class="col-12 badge badge-pill  badge-danger">Offline</div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-12 mb-4">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h2 class="card-title">Last 10 Transactions</h2>
+                  <table class="table mb-0">
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Lumini X</td>
+                        <td>1/10/2018 1:45PM</td>
+                        <td><div class="badge badge-pill  badge-success">Accepted</div></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Primo</td>
+                        <td>1/10/2018 1:49PM</td>
+                        <td><div class="badge badge-pill  badge-success">Accepted</div></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Lumini X</td>
+                        <td>1/10/2018 1:50PM</td>
+                        <td><div class="badge badge-pill badge-warning">Bill Jammed</div></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>WebGlow Machine</td>
+                        <td>1/10/2018 2:02PM</td>
+                        <td><div class="badge badge-pill  badge-success">Accepted</div></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>WebGlow Machine</td>
+                        <td>1/10/2018 2:06PM</td>
+                        <td><div class="badge badge-pill  badge-primary">Bill Rejected</div></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>WebGlowMachine</td>
+                        <td>1/10/2018 2:35PM</td>
+                        <td><div class="badge badge-pill  badge-success">Accepted</div></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Lumini X</td>
+                        <td>1/10/2018 2:41PM</td>
+                        <td><div class="badge badge-pill  badge-success">Accepted</div></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Primo</td>
+                        <td>1/10/2018 2:43PM</td>
+                        <td><div class="badge badge-pill  badge-danger">Cheating Detected</div></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Primo</td>
+                        <td>1/10/2018 2:55PM</td>
+                        <td><div class="badge badge-pill  badge-success">Accepted</div></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Lumini X</td>
+                        <td>1/10/2018 3:46PM</td>
+                        <td><div class="badge badge-pill  badge-success">Accepted</div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="pages/tables/search.html" class="btn btn-primary">View More Transactions</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-4">
+                <div class="col-12 global-card">
+                  <div class="card bg-primary w-100" style="background-image: url(images/vtailadvert.png);">
+                    <div class="card-body text-white d-flex flex-column align-items-center justify-content-center">
+                      <h2>New Mixes Available</h2>
+                      <p>All new VTail Mix#25, #26 and Primo Mixes are now available, purchase now and save 10%!</p>
+                      <a href="#" class="btn btn-outline-secondary">View Details</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="float-right">
+                <a href="#">Copyright VTail</a> &copy; 2018. All rights reserved.
+            </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="/node_modules/flot/jquery.flot.js"></script>
+  <script src="/node_modules/flot/jquery.flot.resize.js"></script>
+  <script src="/node_modules/flot/jquery.flot.categories.js"></script>
+  <script src="/node_modules/flot/jquery.flot.pie.js"></script>
+  <script src="/node_modules/rickshaw/vendor/d3.v3.js"></script>
+  <script src="/node_modules/rickshaw/rickshaw.min.js"></script>
+  <script src="/node_modules/chartist/dist/chartist.min.js"></script>
+  <script src="/node_modules/chartist-plugin-legend/chartist-plugin-legend.js"></script>
+  <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="/node_modules/raphael/raphael.min.js"></script>
+  <script src="/node_modules/morris.js/morris.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="/js/off-canvas.js"></script>
+  <script src="/js/hoverable-collapse.js"></script>
+  <script src="/js/misc.js"></script>
+  <script src="/js/settings.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="/js/dashboard_1.js"></script>
+    <script src="/js/morris.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
