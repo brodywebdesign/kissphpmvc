@@ -1,0 +1,64 @@
+/* Forms */
+
+%form-properties {
+  border-radius: 2px;
+  background-color: $white;
+  border: 1px solid $border-color;
+  font-size: 0.875rem;
+  height: 2.375rem;
+  padding: 0 0.75rem;
+  color: #a1aab;
+  @include input-placeholder {
+    font-size: 0.875rem;
+    color: color(gray-light);
+  }
+}
+
+.form-control,
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  @extend %form-properties;
+}
+
+textarea {
+  height: auto !important;
+  padding: 0.75rem !important;
+}
+
+.input-group {
+  .input-group-addon {
+    @extend %form-properties;
+    border-right: none;
+
+    i {
+      color: color(gray);
+    }
+  }
+
+  .form-control {
+    @extend %form-properties;
+  }
+
+  &.solid {
+    .input-group-addon {
+      background: color(gray-lighter);
+      border: none;
+
+      i {
+        color: color(gray);
+      }
+    }
+
+    .form-control {
+      background: color(gray-lighter);
+      border: none;
+    }
+  }
+}
+
+.form-group {
+  .form-control-file {
+    display: none;
+  }
+}

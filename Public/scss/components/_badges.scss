@@ -1,0 +1,17 @@
+/* Badges */
+
+.badge {
+  border-radius: 0.125rem;
+  padding: 0.25rem 0.5625rem;
+  font-family: $TYPE-1;
+  font-weight: 500;
+
+  &.badge-success,
+  &.badge-warning {
+    color: color(white);
+  }
+
+  &.badge-pill {
+    @include border-radius(50px);
+  }
+}

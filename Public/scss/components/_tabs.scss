@@ -1,0 +1,19 @@
+/* Bootstrap tabs */
+
+
+.nav-tabs {
+	.nav-link {
+		border: 0;
+		color: color(black);
+		font-size: 0.875rem;
+
+		&.active {
+			border-bottom: 1px solid theme-color(primary);
+			color: color(black);
+		}
+	}
+
+	.nav-tabs {
+		@extend .text-muted;
+	}
+}

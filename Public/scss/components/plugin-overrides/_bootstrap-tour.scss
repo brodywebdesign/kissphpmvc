@@ -1,0 +1,12 @@
+/* bootstrap-tour */
+
+
+.tour-tour {
+  .popover-title {
+    @extend .card-title;
+  }
+
+  .btn {
+    @extend .btn-outline-primary;
+  }
+}
