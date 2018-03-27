@@ -1,0 +1,35 @@
+/* Tables */
+
+
+.table {
+  thead {
+    tr {
+      border-width: 1px;
+      border-color: $border-color;
+
+      th {
+        font-size: 0.9375rem;
+        font-weight: 500;
+        border-width: 1px;
+        border-color: $border-color;
+        height: $table-cell-height;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-width: 1px;
+      border-color: $border-color;
+
+      td {
+        font-size: 0.9375rem;
+        border-width: 1px;
+        border-color: $border-color;
+        height: $table-cell-height;
+        vertical-align: middle;
+      }
+    }
+  }
+}

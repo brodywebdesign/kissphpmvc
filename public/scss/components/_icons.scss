@@ -1,0 +1,17 @@
+/* Icons */
+
+.icons-list {
+  > div {
+    background: color(gray-light)est;
+    border: 1px solid $white;
+    font-weight: 300;
+    padding: 0.5rem;
+    text-align: center;
+
+    i {
+      display: block;
+      font-size: 1.5rem;
+      margin: 0.5rem auto;
+    }
+  }
+}

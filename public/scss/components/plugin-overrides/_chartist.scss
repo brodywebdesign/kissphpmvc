@@ -1,0 +1,213 @@
+/* chartist */
+
+
+#dashboard-chartist-simple {
+  ul.ct-legend {
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      color: color(gray-light);
+      font-size: 13px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin-right: 10px;
+        @include border-radius(100%);
+      }
+
+      &.ct-series-0 {
+        &:before {
+          background: #A47FD1;
+        }
+      }
+
+      &.ct-series-1 {
+        &:before {
+          background: #39E67D;
+        }
+      }
+    }
+  }
+
+  .ct-labels {
+    .foreignObject {
+      width: 15px !important;
+      overflow: hidden;
+
+      .ct-label.ct-vertical {}
+    }
+  }
+}
+// Line Charts Starts
+// Data -1
+
+.ct-series-a .ct-line {
+  stroke: #3AE67E;
+  stroke-width: 3px;
+  stroke-dasharray: 0;
+}
+
+.ct-series-a .ct-point {
+  stroke: lighten($blue, 1);
+  stroke-width: 10px;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+}
+// Data -2
+
+.ct-series-b .ct-line {
+  stroke: #A47FD1;
+  stroke-width: 3px;
+  stroke-dasharray: 0;
+}
+
+.ct-series-b .ct-point {
+  stroke: lighten($green, 1);
+  stroke-width: 10px;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+}
+// Data -3
+
+.ct-series-c .ct-line {
+  stroke: lighten($orange, 15);
+  stroke-width: 3px;
+  stroke-dasharray: 0;
+  stroke-dasharray: 0;
+}
+
+.ct-series-c .ct-point {
+  stroke: lighten($orange, 1);
+  stroke-width: 10px;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+}
+
+.ct-grids {
+  stroke-dasharray: 0;
+  stroke-width: 1px;
+  stroke-opacity: 0.4;
+}
+// Line Charts Ends
+// Bar Charts Starts
+// Data -1
+
+.ct-series-a .ct-bar {
+  stroke: lighten($blue, 15);
+  stroke-width: 20px;
+  stroke-dasharray: 0;
+  stroke-linecap: squre;
+}
+// Data -2
+
+.ct-series-b .ct-bar {
+  stroke: lighten($green, 15);
+  stroke-width: 20px;
+  stroke-dasharray: 0;
+  stroke-linecap: squre;
+}
+// Data -3
+
+.ct-series-c .ct-bar {
+  stroke: lighten($orange, 15);
+  stroke-width: 20px;
+  stroke-dasharray: 0;
+  stroke-linecap: squre;
+}
+// Data -4
+
+.ct-series-d .ct-bar {
+  stroke: lighten($red, 15);
+  stroke-width: 20px;
+  stroke-dasharray: 0;
+  stroke-linecap: squre;
+}
+// Bar Charts Ends
+// Pie Chart Starts
+// Data -1
+
+.ct-series-a .ct-slice-pie {
+  fill: lighten($blue, 15);
+  stroke-width: 4px;
+}
+// Data -2
+
+.ct-series-b .ct-slice-pie {
+  fill: lighten($green, 15);
+  stroke-width: 4px;
+}
+// Data 3
+
+.ct-series-c .ct-slice-pie {
+  fill: lighten($red, 15);
+  stroke-width: 4px;
+}
+// Data -4
+
+.ct-series-d .ct-slice-pie {
+  fill: lighten($orange, 15);
+  stroke-width: 4px;
+}
+// Pie Chart Starts
+// Donut chart Starts
+// Data -1
+
+.ct-series-a .ct-slice-donut-solid {
+  fill: lighten($blue, 15);
+}
+// Data -2
+.ct-series-b .ct-slice-donut-solid {
+  fill: lighten($green, 15);
+}
+// Data -3
+.ct-series-c .ct-slice-donut-solid {
+  fill: lighten($red, 15);
+}
+// Data -d
+.ct-series-a .ct-slice-donut-solid {
+  fill: lighten($orange, 15);
+}
+// E-commerce Dashboard Chart
+#ct-chart-dash-barChart {
+  // Data -1
+  .ct-series-a .ct-bar {
+    stroke: lighten($red, 10);
+    stroke-width: 20px;
+    stroke-dasharray: 0;
+    stroke-linecap: squre;
+  }
+  // Data -2
+  .ct-series-b .ct-bar {
+    stroke: lighten($blue, 10);
+    stroke-width: 20px;
+    stroke-dasharray: 0;
+    stroke-linecap: squre;
+  }
+  // Data -3
+  .ct-series-c .ct-bar {
+    stroke: lighten($blue, 15);
+    stroke-width: 20px;
+    stroke-dasharray: 0;
+    stroke-linecap: squre;
+  }
+  // Data -4
+  .ct-series-d .ct-bar {
+    stroke: lighten($blue, 20);
+    stroke-width: 20px;
+    stroke-dasharray: 0;
+    stroke-linecap: squre;
+  }
+}
+
+
+#dashboard-chartist-simple{
+  .ct-label.ct-vertical.ct-start{
+    @include justify-content(start);
+    text-align: left;
+  }
+}

@@ -1,0 +1,40 @@
+/* pws-tabs */
+
+
+.pws_tabs_container {
+	ul.pws_tabs_controll {
+		margin-bottom: 9px;
+
+		li {
+			a {
+				border: 0;
+				color: color(gray);
+				background: $border-color;
+				font-size: 0.875rem;
+				padding: 0.63rem 1.94rem;
+				margin-right: 10px;
+				@include border-radius(2px);
+
+				&:hover {
+					background: theme-color(info);
+					color: $white;
+				}
+
+				&.pws_tab_active {
+					background: theme-color(info);
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.pws_tabs_list {
+		padding: 47px 32px 51px;
+		@include border-radius(4px);
+		font-size: 14px;
+		line-height: 1.71;
+		color: #575962;
+		border: 1px solid $border-color;
+		background: $white;
+	}
+}

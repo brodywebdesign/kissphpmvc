@@ -1,0 +1,18 @@
+/* bootstrap-progress */
+
+.progress {
+  height: 0.9275rem;
+  @include border-radius(2px);
+
+  .progress-bar {
+    &.progress-slim {
+      height: 0.5rem;
+    }
+  }
+}
+
+.ui-progress {
+  @include border-radius(2px);
+  height: 6px;
+  overflow: hidden;
+}

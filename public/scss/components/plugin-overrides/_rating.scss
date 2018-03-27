@@ -1,0 +1,58 @@
+/* Rating */
+
+
+.br-theme-css-stars,
+.br-theme-fontawesome-stars {
+  .br-widget {
+    a.br-active,
+    a.br-selected {
+      &:after {
+        color: theme-color(warning);
+      }
+    }
+  }
+}
+
+.br-theme-bars-1to10,
+.br-theme-bars-horizontal,
+.br-theme-bars-movie,
+.br-theme-bars-pill,
+.br-theme-bars-reversed {
+  .br-widget {
+    a {
+      background-color: lighten(theme-color(warning), 40%);
+      color: theme-color(warning);
+
+      &.br-active,
+      &.br-selected {
+        background-color: theme-color(warning);
+      }
+    }
+  }
+}
+
+.br-theme-bars-square {
+  .br-widget {
+    a {
+      border-color: lighten(theme-color(warning), 30%);
+      color: lighten(theme-color(warning), 40%);
+
+      &.br-active,
+      &.br-selected {
+        border-color: theme-color(warning);
+        color: theme-color(warning);
+      }
+    }
+  }
+}
+
+.br-theme-bars-1to10,
+.br-theme-bars-horizontal,
+.br-theme-bars-movie,
+.br-theme-bars-reversed {
+  .br-widget {
+    .br-current-rating {
+      color: theme-color(warning);
+    }
+  }
+}

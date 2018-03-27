@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <?=$this->getPartial('Dashboard\head', 'Web', []);?>
+</head>
+<body class="sidebar-dark">
+  <!-- partial -->
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <?=$this->getPartial('Partials\top_nav', 'Web', []);?>
+    
+    
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        
+        <!-- partial:partials/_sidebar.html -->
+        <?=$this->getPartial('Partials\side_nav', 'Web', []);?>
+        <!-- partial -->
+        <?=$this->getPartial('Dashboard\body', 'Web', []);?>
+        <!-- content-wrapper ends -->
+        <?=$this->getPartial('Partials\footer', 'Web', []);?>
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <!-- endinject -->
+  
+  <!-- Plugin js for this page-->
+  <script src="/node_modules/flot/jquery.flot.js"></script>
+  <script src="/node_modules/flot/jquery.flot.resize.js"></script>
+  <script src="/node_modules/flot/jquery.flot.categories.js"></script>
+  <script src="/node_modules/flot/jquery.flot.pie.js"></script>
+  <script src="/node_modules/rickshaw/vendor/d3.v3.js"></script>
+  <script src="/node_modules/rickshaw/rickshaw.min.js"></script>
+  <script src="/node_modules/chartist/dist/chartist.min.js"></script>
+  <script src="/node_modules/chartist-plugin-legend/chartist-plugin-legend.js"></script>
+  <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <script src="/node_modules/raphael/raphael.min.js"></script>
+  <script src="/node_modules/morris.js/morris.min.js"></script>
+  <!-- End plugin js for this page-->
+  
+  <!-- inject:js -->
+  <script src="/js/off-canvas.js"></script>
+  <script src="/js/hoverable-collapse.js"></script>
+  <script src="/js/misc.js"></script>
+  <script src="/js/settings.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="/js/dashboard_1.js"></script>
+  <script src="/js/morris.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

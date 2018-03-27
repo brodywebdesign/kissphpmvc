@@ -1,0 +1,231 @@
+/*------------------------------------------------------------------
+ [Master Stylesheet]
+
+  Project:	Salt Admin
+  Version:	1.0
+-------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------
+
+  ===== Table of Contents =====
+
+  * Import Bootstrap functions and variables
+  * Template variables
+  * SCSS Compass Functions
+  * Boostrap Main SCSS
+  * Template mixins
+    + Animations
+    + Backgrounds
+    + Miscs
+    + Color-functions
+    + Functions
+  * Template components
+    + Sidebar styles
+    + Navbar styles
+    + Footer styles
+  * Core Styles
+    + Typography
+    + Misc
+    + Reset
+    + Utilities
+  * Layout
+  * Bootstrap components
+    + Accordions
+    + Badges
+    + Bootstrap-alerts
+    + Bootstrap-progress
+    + Buttons
+    + Cards
+    + Dropdowns
+    + Checkbox-radios
+    + Forms
+    + Icons
+    + Modals
+    + Paginations
+    + Tables
+    + Tabs
+  * Custom widgets and cards
+    + New-account
+    + Portfolio-grid
+    + Portfolio-grid-2
+    + Profile-list
+    + Search-results
+    + Settings-panel
+    + Timeline
+    + Todo-list
+    + User-profile
+    + Wizard
+    + Mail styles
+    + Dashboard-cards
+  * Email components
+    + Header
+    + Sidebar
+    + Mailbody
+    + Message content
+  * Plugin overrides
+    + Ace Editor
+    + Avgrund
+    + Bootstrap-table
+    + Bootstrap-tour
+    + Chartist
+    + CodeMirror
+    + Colcade
+    + Colorpicker
+    + Select-splitter
+    + Context Menu
+    + Data Tables
+    + Datepicker
+    + Dropify
+    + Dropzone
+    + Flot chart
+    + Full Calendar
+    + Google Charts
+    + Icheck
+    + Ion-rangeslider
+    + Jquery File Upload
+    + Light Gallery
+    + Listify
+    + No-ui-slider
+    + Owl-carousel
+    + Pws-tabs
+    + Quill
+    + Rating
+    + Summernote
+    + Switchery
+    + Tags
+    + Tinymce
+    + Toast
+    + Typeahead
+    + Wysieditor
+    + X-editable
+  * Sample page styles
+    + Landing
+    + Auth
+    + Lock-screen
+    + Pricing-table
+  * Template demo styles
+    + Demo
+-------------------------------------------------------------------*/
+
+
+/*==== Import Bootstrap functions and variables ====*/
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+/*==== Template variables ====*/
+@import "variables";
+
+/*==== SCSS Compass Functions ====*/
+@import "../node_modules/compass-mixins/lib/compass";
+@import "../node_modules/compass-mixins/lib/animate";
+
+/*==== Boostrap Main SCSS ====*/
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*==== Template mixins ====*/
+@import "mixins/animation";
+@import "mixins/background";
+@import "mixins/misc";
+@import "mixins/color-functions";
+@import "functions";
+
+/*==== Template components ====*/
+@import "sidebar";
+@import "navbar";
+@import "footer";
+
+/*==== Core Styles ====*/
+@import "typography";
+@import "misc";
+@import "reset";
+@import "utilities";
+
+/*==== Layout ====*/
+@import "layouts";
+
+/*==== Bootstrap components ====*/
+@import "components/accordions";
+@import "components/badges";
+@import "components/bootstrap-alerts";
+@import "components/bootstrap-progress";
+@import "components/buttons";
+@import "components/cards";
+@import "components/dropdown";
+@import "components/checkbox-radio";
+@import "components/forms";
+@import "components/icons";
+@import "components/modals";
+@import "components/pagination";
+@import "components/tables";
+@import "components/tabs";
+
+/*==== Custom widgets and cards ====*/
+@import "components/new-account";
+@import "components/portfolio-grid";
+@import "components/portfolio-grid-2";
+@import "components/profile-list";
+@import "components/search-results";
+@import "components/settings-panel";
+@import "components/timeline";
+@import "components/todo-list";
+@import "components/user-profile";
+@import "components/wizard";
+@import "components/dashboard-cards";
+
+
+/*==== Email components ====*/
+@import "components/mail-components/header";
+@import "components/mail-components/mailbody";
+@import "components/mail-components/messagecontent";
+@import "components/mail-components/sidebar";
+
+
+/*==== Plugin overrides ====*/
+@import "components/plugin-overrides/ace";
+@import "components/plugin-overrides/avgrund";
+@import "components/plugin-overrides/bootstrap-table";
+@import "components/plugin-overrides/bootstrap-tour";
+@import "components/plugin-overrides/chartist";
+@import "components/plugin-overrides/codemirror";
+@import "components/plugin-overrides/colcade";
+@import "components/plugin-overrides/colorpicker";
+@import "components/plugin-overrides/select-splitter";
+@import "components/plugin-overrides/context-menu";
+@import "components/plugin-overrides/data-tables";
+@import "components/plugin-overrides/datepicker";
+@import "components/plugin-overrides/dropify";
+@import "components/plugin-overrides/dropzone";
+@import "components/plugin-overrides/flot-chart";
+@import "components/plugin-overrides/full-calendar";
+@import "components/plugin-overrides/google-charts";
+@import "components/plugin-overrides/icheck";
+@import "components/plugin-overrides/ion-rangeslider";
+@import "components/plugin-overrides/jquery-file-upload";
+@import "components/plugin-overrides/light-gallery";
+@import "components/plugin-overrides/listify";
+@import "components/plugin-overrides/mixins/no-ui-slider";
+@import "components/plugin-overrides/no-ui-slider";
+@import "components/plugin-overrides/owl-carousel";
+@import "components/plugin-overrides/pws-tabs";
+@import "components/plugin-overrides/quill";
+@import "components/plugin-overrides/rating";
+@import "components/plugin-overrides/select2";
+@import "components/plugin-overrides/summernote";
+@import "components/plugin-overrides/switchery";
+@import "components/plugin-overrides/tags";
+@import "components/plugin-overrides/tinymce";
+@import "components/plugin-overrides/toast";
+@import "components/plugin-overrides/typeahead";
+@import "components/plugin-overrides/wysieditor";
+@import "components/plugin-overrides/x-editable";
+
+/*==== Sample page styles ====*/
+@import "landing-screens/landing";
+@import "landing-screens/auth";
+@import "landing-screens/lock-screen";
+@import "landing-screens/pricing-table";
+
+/*==== Template demo styles ====*/
+@import "demo";

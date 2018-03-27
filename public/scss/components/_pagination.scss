@@ -1,0 +1,28 @@
+/* Pagination */
+
+.page-item {
+  .page-link {
+    border-color: $border-color;
+    color: color(black);
+    font-size: 0.875rem;
+
+    i {
+      &:before {
+        font-size: 18px;
+        line-height: 11px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    .page-link {
+      background: theme-color("primary");
+      border-color: theme-color("primary");
+      color: color(white);
+    }
+  }
+}

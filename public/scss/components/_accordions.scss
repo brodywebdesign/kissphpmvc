@@ -1,0 +1,40 @@
+/* Accordions */
+
+
+.accordion {
+  .card {
+    margin-bottom: 10px;
+    box-shadow: none;
+
+    .card-header {
+      background-color: color(gray-lightest);
+      border: 1px solid $border-color;
+      padding: 0.625rem 0.875rem;
+      @include border-radius(0px);
+
+      h5 {
+        line-height: 1.33;
+        font-weight: 500;
+        border: none;
+
+        a {
+          color: $black;
+          text-decoration: none;
+          font-size: 0.9375rem;
+          border: none;
+        }
+      }
+    }
+
+    .collapse,
+    .collapsed,
+    .collapsing {
+      border: 1px solid $border-color;
+      border-top: none;
+
+      .card-body {
+        padding: 1.1875rem 1.625rem 1.4375rem 0.8125rem;
+      }
+    }
+  }
+}

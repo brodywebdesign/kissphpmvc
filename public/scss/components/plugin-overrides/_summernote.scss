@@ -1,0 +1,30 @@
+/* summernote */
+
+
+.note-editor {
+  &.note-frame {
+    border: 1px solid $border-color;
+
+    &.fullscreen {
+      z-index: 2000;
+    }
+  }
+
+  .card-header {
+    &.note-toolbar {
+      .note-para {
+        .dropdown-menu {
+          > div {
+            &:first-child {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.note-popover {
+  border: 1px solid $border-color;
+}

@@ -1,0 +1,292 @@
+/* Dashboard-cards */
+
+
+.revenue-card {
+  .card {
+    .card-body {
+      .row {
+        .chart-side {}
+
+        .last-year-progress {
+          text-align: right;
+          padding-top: 30px;
+
+          p {
+            font-size: 2.125rem;
+            line-height: 0.71;
+            margin-bottom: 1rem;
+          }
+
+          small {
+            font-size: 0.625rem;
+            line-height: 2.4;
+            font-weight: 300;
+          }
+        }
+
+        .revenue-details {
+          .head {
+            font-size: 14px;
+            line-height: 1.71;
+            margin-bottom: 5px;
+          }
+
+          .count {
+            font-size: 25px;
+            line-height: 0.96;
+          }
+        }
+      }
+    }
+  }
+}
+
+.stock-price {
+  .card {
+    .card-body {
+      .amount-column-wrapper {
+        @media (max-width: 768px) {
+          padding: 0;
+        }
+
+        p.total-performance {
+          font-size: 2.825rem;
+          font-family: $TYPE-2;
+          margin-bottom: 1.50rem;
+          @media (max-width: 768px) {
+            font-size: 2rem;
+          }
+        }
+
+        .performace-tile {
+          i {
+            font-size: 20.5px;
+            margin-right: 1rem;
+            @media (max-width: 768px) {
+              font-size: 15px;
+            }
+          }
+
+          p.progess {
+            font-size: 2.175rem;
+            font-family: $TYPE-2;
+            @media (max-width: 768px) {
+              font-size: 1.8rem;
+            }
+          }
+
+          p.description {
+            font-family: $TYPE-1;
+            font-size: 0.9375rem;
+            line-height: 1.67;
+            @media (max-width: 768px) {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.task-list {
+  .task-cards {
+    @include border-radius(2px);
+    padding: 19px 14px 15px;
+    border: 1px solid color(gray-lighter);
+    margin-bottom: 1.5rem;
+
+    .title {
+      font-size: 1.06rem;
+      font-weight: 500;
+      font-family: $TYPE-1;
+      margin-bottom: 4px;
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    .reference-url {
+      font-size: 0.81rem;
+      font-weight: 400;
+      margin-bottom: 0;
+
+      a {
+        margin-left: 5px;
+        font-size: inherit;
+        color: inherit;
+        font-weight: 500;
+      }
+    }
+
+    .ticket-number {
+      background: color(gray-lighter);
+      display: inline-block;
+      width: 4.875rem;
+      height: 2rem;
+      text-align: center;
+      font-size: 1.0625rem;
+      font-weight: 300;
+      line-height: 30px;
+      margin-bottom: 0;
+      @include border-radius(50px);
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    .amount {
+      small {
+        font-size: 11px;
+      }
+
+      .value {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+
+    .status {
+      small {
+        font-size: 11px;
+      }
+
+      .value {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+
+    i {
+      font-size: 20px;
+    }
+
+    &.selected {
+      background: #FF0028;
+      box-shadow: 0 5px 4.7px 0.3px rgba(0, 0, 0, 0.15);
+      border: none;
+
+      .title {
+        color: $white;
+      }
+
+      .reference-url {
+        color: $white;
+      }
+
+      .ticket-number {
+        background: #f6767d;
+        color: $white;
+      }
+
+      .amount {
+        small {
+          color: $white;
+        }
+
+        .value {
+          color: $white;
+        }
+      }
+
+      .status {
+        small {
+          color: $white;
+        }
+
+        .value {
+          color: $white;
+        }
+      }
+
+      i {
+        color: $white;
+      }
+
+      hr {
+        background: $white;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.user-visits {
+  .views {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  .section {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4B22F5;
+    margin-bottom: 15px;
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.global-card {
+  .card {
+    height: 365px;
+    @include border-radius(2px);
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      line-height: 1.79;
+    }
+
+    .btn {
+      color: $white;
+      border-color: rgba(255,255,255,0.4);
+    }
+  }
+}
+
+.image-card {
+  .image-container {
+    position: relative;
+    background: url("http://via.placeholder.com/350x150") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 207px;
+
+    .controls {
+      position: absolute;
+      bottom: 5px;
+      right: 0;
+      left: 0;
+
+      p {
+        font-size: 15.2px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .text-wrapper {
+    .card-text {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.profile-card {}

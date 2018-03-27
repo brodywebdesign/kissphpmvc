@@ -1,0 +1,5 @@
+// Animations
+
+@mixin sidebar-toggle-animation() {
+  transition: width 0.3s ease;
+}

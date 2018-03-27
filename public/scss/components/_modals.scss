@@ -1,0 +1,21 @@
+/* Modals */
+
+
+.modal-content {
+  border: 0;
+}
+
+.modal-footer,
+.modal-header {
+  border-color: $border-color;
+}
+
+.modal-backdrop {
+  &.show {
+    opacity: 0.3;
+  }
+}
+
+.modal-dialog {
+  margin-top: calc(#{$navbar-height} + 20px);
+}

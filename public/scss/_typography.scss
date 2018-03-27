@@ -1,0 +1,159 @@
+@import url( 'https://fonts.googleapis.com/css?family=Abel|Roboto:300,400,500,700');
+
+body {
+  font-size: 14px;
+  font-family: $TYPE-1;
+  font-weight: 400;
+}
+
+.display-1 {
+  font-size: 5rem;
+  @media (max-width: 991px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 3.5rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+  }
+}
+
+.display-2 {
+  font-size: 2.9rem;
+  @media (max-width: 991px) {
+    font-size: 2.2rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.9rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+}
+
+.display-3 {
+  font-size: 2.1875rem;
+  @media (max-width: 991px) {
+    font-size: 1.9rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+  }
+}
+
+.error-page {
+  h1 {
+    font-size: 12rem;
+    @media (max-width: 991px) {
+      font-size: 8rem;
+    }
+  }
+}
+
+.page-title {
+  color: theme-color("dark");
+  margin: 0.5rem 0 1.5rem;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.boldest {
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.875rem;
+  font-family: $TYPE-1;
+  font-weight: 400;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $TYPE-1;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.38rem;
+  line-height: 1.36;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  @media (max-width: 768px) {
+    font-size: 1.15rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+  }
+}
+
+h3 {
+  font-size: 1.13rem;
+  line-height: 1.76;
+}
+
+h4 {
+  font-size: 1.06rem;
+  line-height: 1.76;
+}
+
+h5 {
+  font-size: 1.06rem;
+  line-height: 1.76;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.88;
+}
+
+,
+.accordion,
+.alert,
+.badge,
+.breadcrumb,
+.btn,
+.dropdown,
+.form-control,
+.nav,
+.pagination,
+.progress,
+a,
+p {
+  font-family: $TYPE-1;
+}

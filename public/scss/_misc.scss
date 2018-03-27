@@ -1,0 +1,116 @@
+.content-wrapper {
+  background: $content-bg;
+  margin-left: $sidebar-width-lg;
+  min-height: 100vh;
+  padding: 1.5rem 1.7rem;
+  transition: all 0.3s ease;
+  width: calc(100% - #{$sidebar-width-lg});
+  @media (max-width: 991px) {
+    margin-left: 0;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &.full-page-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.container-scroller {
+  height: 100vh;
+  position: relative;
+}
+
+pre {
+  background: color(gray-lighter);
+  padding: 15px;
+  font-size: 14px;
+}
+
+.bg-google {
+  background: social-color(google);
+  color: $white;
+}
+
+.bg-facebook {
+  background: social-color(facebook);
+  color: $white;
+}
+
+.bg-twitter {
+  background: social-color(twitter);
+  color: $white;
+}
+
+.bg-linkedin {
+  background: social-color(linkedin);
+  color: $white;
+}
+
+.social-panel {
+  text-align: center;
+  padding: 0.69rem 1.75rem;
+  @include border-radius(2px) @include display-flex;
+  @include align-items(center);
+  @include justify-content(center);
+
+  p {
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  i {
+    margin-right: auto;
+    font-size: 20px;
+  }
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  @include border-radius(100%);
+
+  img {
+    width: 36px;
+    height: 36px;
+    @include border-radius(100%);
+  }
+
+  .online-status {
+    position: absolute;
+    left: -6px;
+    top: 15px;
+    display: block;
+    height: 13px;
+    width: 13px;
+    border: 2px solid $white;
+    @include border-radius(100%);
+  }
+
+  &.profile-img-lg {
+    width: 47px;
+    height: 47px;
+
+    img {
+      width: 47px;
+      height: 47px;
+    }
+  }
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  @include border-radius(100%);
+
+  &.profile-img-lg {
+    width: 47px;
+    height: 47px;
+  }
+}

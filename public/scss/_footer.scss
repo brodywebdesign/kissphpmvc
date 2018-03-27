@@ -1,0 +1,18 @@
+/* Footer styles */
+
+.footer {
+  background: $footer-bg;
+  color: $footer-color;
+  margin-left: $sidebar-width-lg;
+  padding: 1rem;
+  transition: all 0.8s ease;
+  width: calc(100% - #{$sidebar-width-lg});
+
+  a {
+    color: $footer-color;
+  }
+  @media (max-width: 991px) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
