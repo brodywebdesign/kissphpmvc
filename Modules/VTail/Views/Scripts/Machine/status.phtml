@@ -1,7 +1,73 @@
 <!DOCTYPE >
 <html lang="En">
-    <?=$this->getPartial('Pages\Layout\header', 'Primary', ['title' => 'Page Title Goes Here!', 'decription' => 'Page description goes here.', 'author' => 'michaeladennis@yahoo.com']);?>
+    <?=$this->getPartial('Pages\Layout\header', 'Primary', ['title' => 'Page Title Goes Here!', 'description' => 'Page description goes here.', 'author' => 'michaeladennis@yahoo.com']);?>
     <body>
+        <h1>Machine ----- Status Page</h1>        
+        <h3>Last Boot : </h3>
+        <h3>Last Update : </h3>
+        <h3>Last Harness Type : 12v || 5v</h3>
+        <h2>Machine ----- Harness Status</h2>
+        <div>
+            <h2>Harness 5v</h2>
+            <hr/>
+            <h3>Led 1: <?=$this->machine->led_1;?>| CIRCUIT</h3>
+            -- LED BLINK REPORT --
+            <h3>Button 1: STATE | CIRCUIT</h3>
+            -- Button Press REPORT --
+            <h3>Sensor 1: STATE | CIRCUIT</h3>
+            -- Sensor Trigger Report --
+            <h3>Motor 1: STATE | CIRCUIT</h3>
+            -- Motor Trigger Report --
+        </div>
+        <div>
+            <h2>Harness 12v</h2>
+            <hr/>
+            <h3>Led 1: STATE | CIRCUIT</h3>
+            <h3>Led 2: STATE | CIRCUIT</h3>
+            <h3>Led 3: STATE | CIRCUIT</h3>
+            -- LED BLINK REPORT --
+            <br/>
+            <h3>Button 1: STATE | CIRCUIT</h3>
+            <h3>Button 2: STATE | CIRCUIT</h3>
+            <h3>Button 3: STATE | CIRCUIT</h3>
+            -- Button Press REPORT --
+            <br/>
+            <h3>Sensor 1: STATE | CIRCUIT</h3>
+            <h3>Sensor 2: STATE | CIRCUIT</h3>
+            <h3>Sensor 3: STATE | CIRCUIT</h3>
+            -- Sensor Trigger Report --
+            <br/>
+            <h3>Motor 1: STATE | CIRCUIT</h3>
+            <h3>Motor 2: STATE | CIRCUIT</h3>
+            <h3>Motor 3: STATE | CIRCUIT</h3>
+            -- Motor Trigger Report --
+        </div>
+        <h2>Machine ----- Bill Collector Status</h2>
+        <div>
+            <h3>Last Reported : {->billCollector->lastReportedDate}</h3>
+            <h3>Last Reported State : {->billCollector->lastStateCode}</h3>
+            <h3>Cassette Full : <?='false';//$this->billCollector->Cassette->isFull();?></h3>
+            <h3>Cassette Jam : <?='false';//$this->billCollector->Cassette->isJam();?></h3>
+            <h3>Cassette Total Ballance : $0.00</h3>
+            
+            --Currency--  USD;
+            -- Bills --
+            <h3> $100 : 0 </h3>
+            <h3> $50 : 0 </h3>
+            <h3> $20 : 0 </h3>
+            <h3> $10 : 0 </h3>
+            <h3> $5 : 0 </h3>
+            <h3> $1 : 0 </h3>
+            -- Change --
+            <h3> $0.25 : 0 </h3>
+            <h3> $0.10 : 0 </h3>
+            <h3> $0.05 : 0 </h3>
+            <h3> $0.01 : 0 </h3>
+            <h3>Cassette Last Stacked  : Date </h3>
+            <h3>Cassette Last Rejected  : Date </h3>
+            <h3>Cassette Last Jammed  : Date </h3>
+            -- Bill Collector Report --
+        </div>
     <?=$this->getPartial('VTail\Home\body', 'VTail', []);?>
     <?=$this->getPartial('Pages\Layout\footer', 'Primary', []);?>
     </body>

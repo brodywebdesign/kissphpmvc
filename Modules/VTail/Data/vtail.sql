@@ -32,8 +32,7 @@ CREATE TABLE `Stock` (
 CREATE TABLE `machine_x_billCollectorReport`(
   `id` SERIAL AUTO_INCREMENT,
   `machine_id` bigint(20) unsigned NOT NULL,
-  `status` ENUM('FULL', 'READY', 'JAMMED', 'STACKED', 'REJECTED'),
-  `bill` ENUM('NONE', '1', '5', '10', '20', '50', '100'),	
+  `status` ENUM('81H','82H','83H','84H','85H','86H','87H','88H','89H','88H','89H','8AH','8BH','8CH','8DH'),
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   KEY `machine_id` (`machine_id`),
   CONSTRAINT `machine_x_billCollectorReport_ibfk_1` FOREIGN KEY (`machine_id`) REFERENCES `Machines` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
