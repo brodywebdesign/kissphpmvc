@@ -1,0 +1,242 @@
+<div class="content-wrapper">
+                  <h1 class="page-title">Search Transactions</h1>
+                  <div class="card bg-vpurple">
+                     <div class="card-body">
+                        <div class="float-left col-sm-4 col-lg-6 col-xl-3">
+                           <div class="card-body">
+                              <label>Start Date</label>
+                              <div class="input-group date datepicker b-l-blue">
+                                 <input type="text" class="form-control">
+                                 <span class="input-group-addon">
+                                 <i class="mdi mdi-calendar"></i>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="float-left col-sm-4 col-lg-6 col-xl-3">
+                           <div class="card-body">
+                              <label>End Date</label>
+                              <div class="input-group date datepicker b-l-blue">
+                                 <input type="text" class="form-control">
+                                 <span class="input-group-addon">
+                                 <i class="mdi mdi-calendar"></i>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="float-left col-sm-4 col-lg-4 col-xl-2">
+                           <div class="card-body">
+                              <label>Select Machine</label>
+                              <select id="example1" class="form-control">
+                                 <optgroup label="Santa Barbara, CA">
+                                    <option value="1">Lumini X</option>
+                                    <option value="2">Web Glow Machine</option>
+                                    <option value="3">Primo</option>
+                                    <option value="4">Primo (Front Door)</option>
+                                 </optgroup>
+                                 <optgroup label="Los Angeles, CA">
+                                    <option value="5">Web Glow Machine (Front Door)</option>
+                                    <option value="6">Primo</option>
+                                    <option value="7">Primo (Restroom)</option>
+                                    <option value="8">Lumini X (Front Door)</option>
+                                 </optgroup>
+                                 <optgroup label="Scottsdale, AZ">
+                                    <option value="9">Web Glow Machine (Play Area)</option>
+                                    <option value="10">Web Glow Machine (Play Area)</option>
+                                    <option value="11">Lumini X (Front Door)</option>
+                                    <option value="12">Pumini X (East Corner)</option>
+                                 </optgroup>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="float-left col-sm-4 col-lg-4 col-xl-2">
+                           <div class="card-body">
+                              <label>Status</label>
+                              <select id="example1" class="form-control">
+                                 <option value="1">All</option>
+                                 <option value="2">Success</option>
+                                 <option value="3">Bill Rejected</option>
+                                 <option value="4">Cheating Detected</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="float-left col-sm-4 col-lg-4 col-xl-2">
+                           <button type="submit" class="btn btn-danger my-5">Search</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="row">
+                           <div class="col-12">
+                            <table id="order-listing" class="table table-striped" style="width:100%;">
+                                 <thead>
+                                    <tr>
+                                       <th>Transaction #</th>
+                                       <th>Date</th>
+                                       <th>Location</th>
+                                       <th>Machine</th>
+                                       <th>Amount</th>
+                                       <th>Status</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>1</td>
+                                       <td>1/20/2018</td>
+                                       <td>Los Angeles, CA</td>
+                                       <td>Lumini X</td>
+                                       <td>$2</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                       <
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>2</td>
+                                       <td>1/20/2018</td>
+                                       <td>Scottsdale, AZ</td>
+                                       <td>Lumini X</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>3</td>
+                                       <td>1/20/2018</td>
+                                       <td>Los Angeles, CA</td>
+                                       <td>Lumini X</td>
+                                       <td>$10</td>
+                                       <td>
+                                          <label class="badge badge-danger">Cheating Detected</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>4</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Web Glow Machine</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-warning">Bill Rejected</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>5</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>6</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>7</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>8</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>9</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>10</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>11</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>12</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>13</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>14</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>15</td>
+                                       <td>1/21/2018</td>
+                                       <td>Santa Barbara, CA</td>
+                                       <td>Primo</td>
+                                       <td>$5</td>
+                                       <td>
+                                          <label class="badge badge-success">Success</label>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>

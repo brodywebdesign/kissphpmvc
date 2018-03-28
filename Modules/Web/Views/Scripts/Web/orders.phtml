@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <?=$this->getPartial('Orders\head', 'Web', []);?>
+   </head>
+   <body class="sidebar-dark">
+      <!-- partial -->
+      <div class="container-scroller">
+         <?=$this->getPartial('Partials\top_nav', 'Web', []);?>
+         <!-- partial -->
+         <div class="container-fluid page-body-wrapper">
+            <div class="row row-offcanvas row-offcanvas-right">
+               <!-- partial:../partials/_sidebar.html -->
+               <?=$this->getPartial('Partials\side_nav', 'Web', []);?>
+               <!-- partial -->
+               <?=$this->getPartial('Orders\body', 'Web', []);?>
+               <!-- content-wrapper ends -->
+               <?=$this->getPartial('Partials\footer', 'Web', []);?>
+            </div>
+            <!-- row-offcanvas ends -->
+         </div>
+         <!-- page-body-wrapper ends -->
+      </div>
+      <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <script src="/node_modules/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="/js/off-canvas.js"></script>
+    <script src="/js/hoverable-collapse.js"></script>
+    <script src="/js/misc.js"></script>
+    <script src="/js/settings.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="/js/data-table.js"></script>
+    <!-- End custom js for this page-->
+
+   </body>
+</html>
